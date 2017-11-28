@@ -1,0 +1,24 @@
+{
+    "name": "com.freakpMedia.thelaw",
+    "displayName": "theLaw",
+    "version": "1.0.0",
+    "description": "An application that shows you all the Laws of The Most High.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "freakpMedia",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-plugin-whitelist": "^1.3.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}

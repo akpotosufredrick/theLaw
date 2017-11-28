@@ -1,0 +1,80 @@
+//variables
+$base-color: #609;
+
+@font-face {
+    font-family: akpoto;
+    src: url('../customFonts/Drugs.otf');
+}
+$font-family: akpoto;
+
+$purple: #660099;
+$deepPurple: #406;
+$gold: #fc3;
+$w: #fff;
+
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+// Examples of using the icon mixin:
+// @include icon('user');
+$include-default-icons: true;
+
+.x-toolbar-light .x-button,
+.x-toolbar-light .x-button.x-button-pressing,
+.x-toolbar-light .x-button.x-button-back:after,
+.x-toolbar-light .x-button.x-button-forward:after,{
+  background-color: $gold;
+  background-image: -webkit-linear-gradient(top, $gold,$gold 3%,$gold);
+  overflow: inherit;
+}
+
+.x-toolbar .x-button{
+  color: $gold;
+}
+
+//Custom Pictos BackButton
+.x-tab .x-button-icon.back:before,
+.x-button .x-button-icon.back:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-family: "Pictos";
+    content: "‹";
+}
+
+.x-toolbar .x-title,
+.x-toolbar-light .x-title{
+  color: $gold;
+  font-size: 1em;
+}
+
+.x-list-normal .x-list-item.x-list-item-tpl.x-list-footer-wrap{
+  border-bottom: none;
+}
+
+.x-list-normal .x-list-item.x-item-selected.x-list-item-tpl{
+  border: none;
+}
+.x-list .x-list-item.x-item-selected.x-list-item-tpl{
+  background-image: none;
+  background: initial;
+  color: initial;
+}
+
+.x-list-item-leaf{
+  font-size: 1.3em;
+}
+
+.x-list-item-leaf .book{
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    margin: 0 0 0.5em;
+    text-align: center;
+}
